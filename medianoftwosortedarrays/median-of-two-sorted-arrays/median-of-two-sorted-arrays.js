@@ -6,9 +6,8 @@ function medianOfTwoSortedArrays (numsOne, numsTwo) {
     if(array.length % 2 === 0){
         let sum = array[idx] + array[idx-1]
         return sum / 2
-    } else {
-        return array[idxFloor]
     }
+    return array[idxFloor]
 }
 
 medianOfTwoSortedArrays([1,2],[3,4])
