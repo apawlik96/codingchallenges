@@ -4,7 +4,7 @@ function mergeKSortedLists (lists) {
     const nums = lists.toString()
     if(nums.length === 0){
         return []
-    } 
+    }
     return nums.split(',').sort()
 }
 
