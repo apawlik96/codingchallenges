@@ -8,20 +8,12 @@ function reverseLinkedListII(head,left,right) {
     const idxTwo = right - 1
     const arr = [];
     for (let i=0; i<head.length; i++){
-        if (i < idxOne){
-        arr.push(head[i])
-        }
-    }
-    arr.push(head[idxTwo])
-    for (let i=0; i<head.length; i++){
-        if(i > idxOne && i < idxTwo) {
-        arr.push(head[i])
-        }
-    }
-    arr.push(head[idxOne])
-    for (let i=0; i<head.length; i++){
-        if(i > idxTwo){
-        arr.push(head[i])
+        if (i > idxOne && i < idxTwo) {
+            arr.push(head[i], head[idxOne])
+        } else if (i < idxOne){
+            arr.push(head[i],head[idxTwo])
+        } else if (i > idxTwo){
+            arr.push(head[i])
         }
     }
     return arr
