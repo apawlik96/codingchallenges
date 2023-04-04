@@ -1,6 +1,6 @@
 function removeNthNodeFromEndOfList (head ,n) {
     let idx = head.length - n
-    for (var i=0; i<head.length; i++) {
+    for (let i=0; i<head.length; i++) {
         head.splice(idx, 1)
         return head
     }
