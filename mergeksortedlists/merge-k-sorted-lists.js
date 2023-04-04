@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/merge-k-sorted-lists/
+
 function mergeKSortedLists (lists) {
     const nums = lists.toString()
     if(nums.length === 0){
