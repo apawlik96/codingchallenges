@@ -1,6 +1,5 @@
 // https://leetcode.com/problems/first-missing-positive/
 
-
 function firstMissingPositive (nums) {
     nums.sort((a,b) => a - b)
     const array = nums.filter( numb => numb > 0)
@@ -17,4 +16,4 @@ function firstMissingPositive (nums) {
     }
 }
 
-firstMissingPositive([3,4,-1,1])
+firstMissingPositive([3,4,1])
