@@ -7,11 +7,9 @@ function convertSortedListToBinarySearchTree (head) {
             if(numb === 0){
             brinaryTree.push(numb)
         } else if (numb > 0){
-            arrayPositiveNumb.push(numb)
-            arrayPositiveNumb.sort().reverse()
+            arrayReverse(arrayPositiveNumb,numb)
         } else if (numb < 0){
-            arrayNegativeNumb.push(numb)
-            arrayNegativeNumb.sort().reverse()
+            arrayReverse(arrayNegativeNumb,numb)
         }
     }
     brinaryTree.push(arrayNegativeNumb[0],arrayPositiveNumb[0])
@@ -23,7 +21,12 @@ function convertSortedListToBinarySearchTree (head) {
         brinaryTree.push(arrayPositiveNumb[i], arrayPositiveNumb[i+1])
     }
     const arr = brinaryTree.filter (numb => numb !== undefined)
-    console.log(arr)
+    return arr
+}
+
+function arrayReverse(array,numb){
+    array.push(numb)
+    array.sort().reverse()
 }
 
 convertSortedListToBinarySearchTree([-10,-3,0,5,9])
