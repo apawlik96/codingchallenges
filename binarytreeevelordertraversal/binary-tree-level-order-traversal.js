@@ -11,7 +11,7 @@ function brinaryTreeLevelOrderTraversal (root) {
         arr.push(array[i+1])
         tab.push(arr)
     }
-    console.log(tab)
+    return tab
 }
 
 brinaryTreeLevelOrderTraversal([3,9,20,null,null,15,7])
