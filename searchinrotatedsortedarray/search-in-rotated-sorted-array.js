@@ -1,19 +1,16 @@
 // https://leetcode.com/problems/search-in-rotated-sorted-array/
 function searchInRotatedSortedArray(nums,target){
-    const array = nums.concat(target)
-    const mySet = new Set()
-    for(let i=0; i<array.length; i++){
-        mySet.add(array[i])
-    }
+    let array = nums.concat(target)
+    let mySet = new Set()
+    nums.forEach(numb => mySet.add(numb))
     if(array.length !== mySet.size){
-        for(let i=0; i<nums.length; i++){
-            if(nums[i] === target){
-                return i
+        for(const numb of nums){
+            if(numb === target){
+                return nums.indexOf(numb)
             }
         }
-    } else {
-        return -1
     }
+    return -1
 }
 
 searchInRotatedSortedArray([4,5,6,7,0,1,2],0)
