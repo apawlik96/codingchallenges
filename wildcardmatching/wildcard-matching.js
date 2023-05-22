@@ -18,3 +18,5 @@ function wildcardMatching (s,p) {
 }
 
 wildcardMatching("ab","a?")
+
+module.exports = wildcardMatching

@@ -18,3 +18,5 @@ function divideTwoIntegers(dividend, divisor) {
 }
 
 divideTwoIntegers("7", "-3")
+
+module.exports = divideTwoIntegers
