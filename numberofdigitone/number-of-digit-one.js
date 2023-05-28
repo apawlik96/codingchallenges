@@ -3,7 +3,7 @@ function numberOfDigitOne(n) {
     if (n === 0 || n === 1){
         return 0
     }
-    const array = []
+    let array = []
     for (let i=2; i<=n; i++){
         array.push(i)
     }
