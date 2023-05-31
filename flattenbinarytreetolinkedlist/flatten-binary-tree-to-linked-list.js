@@ -15,5 +15,3 @@ function flattenBinaryTreeToLinkedList (root) {
 }
 
 flattenBinaryTreeToLinkedList([1,2,5,3,4,null,6])
-
-module.exports = flattenBinaryTreeToLinkedList;

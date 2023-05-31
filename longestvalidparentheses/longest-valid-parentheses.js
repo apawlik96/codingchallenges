@@ -11,5 +11,3 @@ function longestValidParentheses(s) {
 }
 
 longestValidParentheses("")
-
-module.exports = longestValidParentheses

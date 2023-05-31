@@ -1,4 +1,4 @@
-// https://leetcode.com/problems/candy/
+// https://leetcode.com/problems/candy/ ZROBIONE
 function candy(ratings) {
     ratings.sort()
     var result = ratings.length;
@@ -11,5 +11,3 @@ function candy(ratings) {
 }
 
 candy([1,0,2])
-
-module.exports = candy

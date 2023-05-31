@@ -10,6 +10,4 @@ function conversionArrayToNumb(array){
     return parseInt(arrayJoin)
 }
 
-addTwoNumbers([2,4,3],[5,6,4])
-
-module.exports = addTwoNumbers;
+console.log(addTwoNumbers([2,4,3],[5,6,4]))

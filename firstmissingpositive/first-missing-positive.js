@@ -16,5 +16,3 @@ function firstMissingPositive(nums) {
 }
 
 firstMissingPositive([3, 4, 1])
-
-module.exports = firstMissingPositive

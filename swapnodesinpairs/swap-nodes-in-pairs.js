@@ -18,6 +18,4 @@ function swapNodesInPairs (head) {
     return array
 }
 
-swapNodesInPairs ([1,2,3,4])
-
-module.exports = swapNodesInPairs
+console.log(swapNodesInPairs ([1,2,3,4]))

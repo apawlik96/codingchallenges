@@ -13,5 +13,3 @@ function singleNumberII(nums) {
 }
 
 singleNumberII([2,2,2,3,4,4])
-
-module.exports = singleNumberII
