@@ -11,3 +11,5 @@ function reverseWordsInAString(string){
 }
 
 reverseWordsInAString("  hello world  ")
+
+module.exports = reverseWordsInAString
