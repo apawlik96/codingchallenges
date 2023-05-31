@@ -1,5 +1,6 @@
+// https://leetcode.com/problems/divide-two-integers/
 function divideTwoIntegers(dividend, divisor) {
-    const numb = divisor.charAt(0)
+    let numb = divisor.toString().charAt(0)
     var result = 0;
     if (numb === '-') {
         var multi = -1 * divisor
@@ -18,3 +19,5 @@ function divideTwoIntegers(dividend, divisor) {
 }
 
 divideTwoIntegers("7", "-3")
+
+module.exports = divideTwoIntegers

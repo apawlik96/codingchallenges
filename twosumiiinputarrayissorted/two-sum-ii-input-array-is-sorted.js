@@ -14,3 +14,5 @@ function twoSumIIInputArrayIsSorted (numbers, target) {
 }
 
 twoSumIIInputArrayIsSorted([2,7,11,15], 9)
+
+module.exports = twoSumIIInputArrayIsSorted

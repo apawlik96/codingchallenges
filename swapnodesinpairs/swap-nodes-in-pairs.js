@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/swap-nodes-in-pairs/
 function swapNodesInPairs (head) {
     if (head.length <= 1){
         return head
@@ -18,4 +19,6 @@ function swapNodesInPairs (head) {
     return array
 }
 
-console.log(swapNodesInPairs ([1,2,3,4]))
+swapNodesInPairs ([1,2,3,4])
+
+module.exports = swapNodesInPairs

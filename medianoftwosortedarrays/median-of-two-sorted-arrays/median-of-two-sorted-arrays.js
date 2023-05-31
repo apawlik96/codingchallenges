@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/median-of-two-sorted-arrays/
 function medianOfTwoSortedArrays (numsOne, numsTwo) {
     const array = numsOne.concat(numsTwo)
     array.sort()
@@ -11,3 +12,5 @@ function medianOfTwoSortedArrays (numsOne, numsTwo) {
 }
 
 medianOfTwoSortedArrays([1,2],[3,4])
+
+module.exports = medianOfTwoSortedArrays

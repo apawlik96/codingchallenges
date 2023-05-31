@@ -30,3 +30,5 @@ function arrayReverse(array,numb){
 }
 
 convertSortedListToBinarySearchTree([-10,-3,0,5,9])
+
+module.exports = convertSortedListToBinarySearchTree
