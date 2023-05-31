@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/remove-nth-node-from-end-of-list/
 function removeNthNodeFromEndOfList (head ,n) {
     let idx = head.length - n
     for (let i=0; i<head.length; i++) {
@@ -7,3 +8,5 @@ function removeNthNodeFromEndOfList (head ,n) {
 }
 
 removeNthNodeFromEndOfList ([1], 1)
+
+module.exports = removeNthNodeFromEndOfList
