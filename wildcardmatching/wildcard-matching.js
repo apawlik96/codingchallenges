@@ -14,7 +14,11 @@ function wildcardMatching (s,p) {
     const sReplace = s.replace(removeLetter,"")
     if (sReplace === pReplace) {
         return true
+    } else {
+        return false
     }
 }
 
 wildcardMatching("ab","a?")
+
+module.exports = wildcardMatching
