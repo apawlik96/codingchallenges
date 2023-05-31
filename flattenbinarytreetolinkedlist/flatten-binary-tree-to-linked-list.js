@@ -1,4 +1,8 @@
+// https://leetcode.com/problems/flatten-binary-tree-to-linked-list/
 function flattenBinaryTreeToLinkedList (root) {
+    if(root.length === 0){
+        return root
+    }
     const array  = []
     for (const numb of root){
         if(numb !== null){
@@ -15,3 +19,5 @@ function flattenBinaryTreeToLinkedList (root) {
 }
 
 flattenBinaryTreeToLinkedList([1,2,5,3,4,null,6])
+
+module.exports = flattenBinaryTreeToLinkedList
