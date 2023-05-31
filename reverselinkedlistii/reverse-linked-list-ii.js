@@ -20,3 +20,5 @@ function reverseLinkedListII(head,left,right) {
 }
 
 reverseLinkedListII([1,2,3,4,5],2,4)
+
+module.exports = reverseLinkedListII
