@@ -9,3 +9,5 @@ function oddEvenLinkedList(head){
 }
 
 oddEvenLinkedList([2,1,3,5,6,4,7])
+
+module.exports = oddEvenLinkedList
