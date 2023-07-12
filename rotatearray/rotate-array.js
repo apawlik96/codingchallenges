@@ -1,11 +1,11 @@
 // https://leetcode.com/problems/rotate-array/description/
 function rotateArray(nums, k){
     const result = []
-    const numb = nums.length - k
-    for(let i=numb; i<nums.length; i++){
-        result.push(nums[i])
-    }
-    nums.splice(numb)
+    const numbOfIdx = nums.length - k
+    nums.forEach((num, index) => {
+        if(index >= numbOfIdx) result.push(num)
+    })
+    nums.splice(numbOfIdx)
     return result.concat(nums)
 }
 
