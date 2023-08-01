@@ -5,7 +5,6 @@ function simplifyPath (string) {
     for(let i=1; i<string.length; i++){
         if(string.charAt(i) === "/" && string.charAt(i+1) === "/") result.push(string.charAt(i))
         if(string.charAt(i) !== "/" && string.charAt(i) !== ".") result.push(string.charAt(i))
-    
     }
     return result.join('')
 } 
