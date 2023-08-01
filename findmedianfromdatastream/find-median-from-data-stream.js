@@ -15,11 +15,8 @@ function findMedianFromDataStream (arrTask, arrNumb) {
 }
 
 function median(array) {
-    if(array.length %2 ===0){
-        return array.reduce((a,b) => (a+b)/2)
-    } else {
-        return array[Math.floor(array.length/2)]
-    }
+    if(array.length %2 ===0) return array.reduce((a,b) => (a+b)/2)
+    return array[Math.floor(array.length/2)]
 }
 
 findMedianFromDataStream(["MedianFinder", "addNum", "addNum", "findMedian", "addNum", "findMedian"] , [[], [1], [2], [], [3], []])
