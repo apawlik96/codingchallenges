@@ -1,11 +1,11 @@
 // https://leetcode.com/problems/container-with-most-water/
 function containerWithMostWater (height) {
-    let mathMaxHeight = Math.max(...height)
-    let indexOfMax = height.indexOf(mathMaxHeight)
-    let indexOfLastMax = height.lastIndexOf(mathMaxHeight)
-    let lastIndex = height[height.length-1]
-    let firstValue = mathMaxHeight * (indexOfLastMax - indexOfMax)
-    let secondValue = Math.min(mathMaxHeight,lastIndex ) * ((height.length-1) - indexOfMax)
+    const mathMaxHeight = Math.max(...height)
+    const indexOfMax = height.indexOf(mathMaxHeight)
+    const indexOfLastMax = height.lastIndexOf(mathMaxHeight)
+    const lastIndex = height[height.length-1]
+    const firstValue = mathMaxHeight * (indexOfLastMax - indexOfMax)
+    const secondValue = Math.min(mathMaxHeight,lastIndex ) * ((height.length-1) - indexOfMax)
     return Math.max(firstValue,secondValue)
 }
 
